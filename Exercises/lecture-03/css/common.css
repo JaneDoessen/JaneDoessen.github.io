@@ -11,7 +11,7 @@ footer {
     --fuuter-bg-color: #000;
 }
 
-.footer-legal {
+.footer-legal ul {
     color:grey;
     background-color: aquamarine;
 }
