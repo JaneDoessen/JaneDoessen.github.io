@@ -7,10 +7,8 @@
  /* more styles */
  @import url(/Exercises/lecture-03/css/common.css);
 
-   
-  
-.footer-legal li {
-    color:whitesmoke;
-    background-color: gray;   
+ body {
+    color: var(--primary-text-color);
+    background: var(--primary-bg-color);
 }
 
