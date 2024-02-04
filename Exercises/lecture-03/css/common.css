@@ -10,3 +10,8 @@ footer {
     --footer-text-color: #fff;
     --fuuter-bg-color: #000;
 }
+
+.footer-legal {
+    color:grey;
+    background-color: aquamarine;
+}
