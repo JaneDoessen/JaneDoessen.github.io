@@ -1,0 +1,17 @@
+/* lecture 03_common css*/
+
+html {
+    --primary-text-color: #000;
+    --primary-bg-color: #fff;
+
+}
+
+body {
+    color: var(--primary-text-color);
+    background: var(--primary-bg-color);
+}
+
+footer {
+    --footer-text-color: #fff;
+    --fuuter-bg-color: #000;
+}

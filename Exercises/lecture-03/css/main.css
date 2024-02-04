@@ -1,0 +1,16 @@
+/* lecture 03_main css*/
+@charset "UTF-8";
+* {
+    margin: 0;
+    padding: 0;
+   }
+ /* more styles */
+ @import url(/Exercises/lecture-03/css/common.css);
+
+   
+  
+.footer-legal li {
+    color:whitesmoke;
+    background-color: gray;   
+}
+
