@@ -11,4 +11,7 @@
     color: var(--primary-text-color);
     background: var(--primary-bg-color);
 }
-
+.footer-legal ul {
+    color: var(-footer-text-color);
+    background-color: var(--footer-bg-color);
+}

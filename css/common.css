@@ -1,12 +1,15 @@
 /* common */
 
 html {
-    --primary-text-color: #000;
-    --primary-bg-color: #fff;
+    color: #000;
+   background-color:#d9c6b5;
 
 }
 
-footer {
-    --footer-text-color: #fff;
-    --fuuter-bg-color: #000;
+
+footer, header
+ {
+    color: #fff;
+    background-color:#c1a587;
+    text-align: center;
 }

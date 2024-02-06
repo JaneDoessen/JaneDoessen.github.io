@@ -1,0 +1,75 @@
+/* Task 2*/ 
+h1,h2,h3 {
+    color:grey;
+}
+
+#main {
+    color:#e60202;
+}
+
+.h2 {
+    color:red;
+}
+
+.heading {
+    color:green;
+}
+
+/*Task 3*/
+ul>li {
+    font-weight: bold;
+}
+
+section > p {
+    color: red;
+   }
+   /*змінити розмір шрифту всіх елементів p всередині елемента section, незалежно від їхнього рівня вкладеності*/
+.pg p{
+    font-size: xx-large;
+}
+/*Task 4*/
+
+.headding h1:first-of-type + h2{
+    color: indigo
+}
+
+p.first a {
+    color:green;}
+
+p>.first a{
+        color:pink;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+
+.headding> div> p{
+    color:salmon;
+}
+
+/*Task 5*/
+/* Маємо іменовані кольори black, blue, green, red, white, yellow
+ - визначати ці кольори за допомогою шістнадцяткового коду: 
+       |  шістнадцяткового коду  | десятковій системі,RGB   |        %            |   альфа-канал, що задає прозорість|
+black  |        #000000          |    rgb (0,0,0)           |   hsl(0,0%,50%)     |          rgba (0,0,0,0.5)         |
+blue   |        #0000ff          |    rgb(0,0,255)          |   hsl(240,100%,50%) |          rgba(0,0,255,0.5)        |
+green  |        #008000          |    rgb(0,128,0)          |   hsl(120,100%,25%) |          rgba(0,128,0,0.5)        | 
+red    |        #ff0000          |    rgb(255,0,0)          |   hsl(0,100%,50%)   |          rgba(255,0,0,0.5)        |
+white  |        #ffffff          |    rgb(255,255,255)      |   hsl(0,0%,100%)    |          rgba(255,255,255,0.5)    | 
+yellow |        #ffff00          |    rgb(255,255,0)        |   hsl(60,100%,50%)  |          rgba(255,255,0,0.5)      |
+*/
+
+/*Task 6*/
+.translucent-box {
+    background:hsl (0deg,100%,50%) ;
+}
+
+/*Task 7*/
+
+:root {
+    font-size: 100%;
+}
+body {
+    font-size: 140%;
+}
+h1 {
+    font-size: 240%;
+}
