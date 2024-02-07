@@ -33,15 +33,14 @@ section > p {
     color: indigo
 }
 
-p.first a {
+p.first {
     color:green;}
 
-p>.first a{
-        color:pink;
-        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    }
+p .first a{
+        color:green;
+}
 
-.headding> div> p{
+div~ p{
     color:salmon;
 }
 
@@ -59,7 +58,7 @@ yellow |        #ffff00          |    rgb(255,255,0)        |   hsl(60,100%,50%)
 
 /*Task 6*/
 .translucent-box {
-    background:hsl (0deg,100%,50%) ;
+    background:hsl (0deg,100%,50%,0.5) ;
 }
 
 /*Task 7*/
