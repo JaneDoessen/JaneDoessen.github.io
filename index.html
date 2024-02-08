@@ -5,8 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Моя домашня сторінка</title>
         <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/common.css">
+        <style>
+            body{
+                font-family: 'Roboto', sans-serif;
+            }
+        </style>
 </head>
   <!--page header-->
   <header>
@@ -17,10 +25,15 @@
         <a href="catalog.html">Catalog</a>
         <a href="contact.html">Contact</a>
         <a href="Exercises/"><strong><em>Exercises</strong></em></a>
-        <hr style="color: lightgray;" size="0.1">
+
+    <nav class="user-experience">
+        <a href="#" class="shopping cart"><i class="fa-solid fa-cart-shopping"></i></a>
+        <a href="cart.html" class="heart"><i class="fa-solid fa-heart"></i></a>
+        <a href="#!" class="user"><i class="fa-solid fa-user"></i></a>
+    </nav>
+       
         <!--brand-->
-    <h1 style="color:darkslategrey"><strong>Boho Glow</strong></h1>
-    <hr style="color: lightgray;" size="0.1">
+    <h1><strong>Book Worm</strong></h1>
 </ul>
 </nav>
 </header>
@@ -60,13 +73,24 @@
 </body>
 
 <footer>
+<section class="footer-social">
+    <ul class="list-unstyled">
+        <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
+        <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+        <li><a href=""><i class="fa-brands fa-github"></i></a></li>
+        <li><a href=""><i class="fa-brands fa-linkedin"></i></a></li>
+        <li><a href=""><i class="fa-brands fa-youtube"></i></a></li>
+        <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+    </ul>
+</section>
+
     <section>
         <ul>
             <a href="#">Terms &amp; Conditions</a>
             <a href="#">Privacy Policy</a>
         </ul>    
     </section>
-  &copy; Boho Glow All Right Reserved
+  &copy; 2024 Book Worm All Right Reserved
 </footer>
 
 </html>
