@@ -66,7 +66,7 @@ ol :nth-child(2n+6) {
 
 /*Task 9*/
 h1.ua::before {
-    content: "Слава";
+    content: "Слава ";
 }
 /*Task 10*/
 h1.hero::after {
