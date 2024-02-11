@@ -1,6 +1,6 @@
 /* common */
 
-html {
+:root {
     --primary-text-color: #000;
     --primary-bg-color:#fff;
     --primary-font-family: 'Roboto', sans-serif; 
@@ -13,7 +13,6 @@ footer, header
  {
     --footer-text-color: #fff;
     --fuuter-bg-color: #000;
-    text-align: center;
 }
 
 .user-experience {
