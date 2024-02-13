@@ -1,0 +1,29 @@
+/*Task 1*/
+
+.negative{
+    background: linear-gradient(
+        to left, 
+        rgb(176,224,230) -50%,
+        rgb(25, 76, 192) -10%,
+        rgb(176,224,230) 0%,
+        rgb(25, 76, 192) 100%,
+        rgb(176,224,230)150%);
+}
+
+.percents{
+    background: linear-gradient(
+        to bottom,
+        rgb(144 238 144) 2em,
+        rgb(0,100,0)  4em,
+        rgb(144 238 144) 8em,
+        rgb(0,100,0)  16em,
+        rgb(144 238 144) 32em,
+        rgb(0,100,0) 64em,
+        rgb(144 238 144) 128em);
+}
+
+.radial{
+    background: radial-gradient(ellipse at top, orange, transparent),
+    radial-gradient(ellipse at bottom, red, transparent);
+
+}
