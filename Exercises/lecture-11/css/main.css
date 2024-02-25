@@ -38,6 +38,7 @@
 }
 
 .grid-container-eight{
+    grid-template-columns: repeat(4,50px);
     justify-content: space-evenly;
 }
 
@@ -57,6 +58,12 @@
 }
 
 .grid-container-twelve{
+    grid-template-columns: repeat(2,auto);
+    grid-row-gap: 2px;
+}
+
+
+.grid-container-thirteen{
     grid-template-columns: repeat(2,auto);
     justify-content: space-evenly;
     align-content: space-evenly;

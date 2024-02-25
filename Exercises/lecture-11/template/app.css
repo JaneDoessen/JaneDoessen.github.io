@@ -10,6 +10,6 @@
   }
 
   .card{
-    min-width: var(--min);
+    min-width: 100%;
     grid-template-columns: repeat(auto-fit, minmax(var(--min)),1fr);
   }

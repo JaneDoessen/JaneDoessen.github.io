@@ -73,18 +73,19 @@ nav {
   margin-left: 1em;
 }
 
-@media (min-width: 800px) {
+@media (max-width: 800px) {
 
     & .navbar {
         display: inline-block;
         flex-direction: column;
-        grid-column:2/6;
-        text-align: center;
+        grid-column:1/6;
+        text-align: left;
     }
 
     & .toolbar {
         display: inline-block;
         flex-direction: column;
-        grid-column:2/6;
+        grid-column:1/6;
+        text-align: left;
 }
 }
