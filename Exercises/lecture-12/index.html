@@ -14,20 +14,7 @@
     font-family: Arial, sans-serif;
     padding: 1em;
   }
-
-
-  @media (min-width: 768px) {
-        p {font-size: clamp(16px,50%,36px);}
-    @media (min-width:768px){
-        p {font-size: clamp(20px, calc((20+36)-20*((100vw-768)/(1920-768))),36px);}
-    @media (max-width: 1920px) {
-        p {font-size: clamp(36px,50%,48px);}
-        }
-    }
-}
-
-    
-    
+    p {font-size: clamp(16px, calc(20+16*((100vw-768px)/(1920px-768px))),48px);}
 
   </style>
 </head>
