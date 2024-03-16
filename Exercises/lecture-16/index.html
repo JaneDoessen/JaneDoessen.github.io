@@ -35,24 +35,92 @@
     // Uncaught TypeError: can't convert BigInt to number
   </script>
 
-<!--Task 5
+<!--Task 5-->
 <script>
     'use strict';
 
     let apples = 2;
     let oranges = 3;
     alert(apples + oranges); 
-</script>-->
-<!--або інший варіант можливий-->
+</script>
+<!--або інший варіант можливий
 <script>
     'use strict';
 
     let apples = "2";
     let oranges = "3";
-    let t = parseInt(apples) + parseInt(oranges);
-    alert(t); 
+    alert(Number(apples) + Number(oranges)); 
 </script>
+або ще один варіант можливий
+<script>
+    'use strict';
+    let apples = "2";
+    let oranges = "3";
+alert( +apples + +oranges );
+</script>
+-->
 
+<!--Task 6
+<script>
+    'use strict';
+
+    let a = 1, b = 1;
+    let c = ++a; // 2
+    let d = b++; // 1
+  </script>
+  -->
+
+  <!--Task 7
+<script>
+    'use strict';
+
+    let a = 2;
+    let x = 1 + (a *= 2);// x=5 a=4
+  </script>
+-->
+
+<!--Task 8
+<script>
+    'use strict';
+
+    "" + 1 + 0// "10"
+    "" - 1 + 0// -1
+    true + false// 1
+    6 / "3"// 2
+    "2" * "3"// 6
+    4 + 5 + "px"// "9px"
+    "$" + 4 + 5// "$45"
+    "4" - 2// 2
+    "4px" - 2// NaN
+    "  -9  " + 5// " -9 5"
+    "  -9  " - 5// -14
+    null + 1// 1
+    undefined + 1// Nan
+    NaN + 1// Nan
+  </script>
+-->
+
+<!--Task 9
+    <script>
+    'use strict';
+    // скоротити цей код за допомогою операторів += і *=:
+    let n = 2;
+    n = n + 5;//  n+=5;
+    n = n * 2;//  n*=2;
+  </script>
+-->
+
+<!--Task 10
+<script>
+      let n1 = "   123   ";
+      let n2 = "123z";
+      let n3 = true;
+      let n4 = false;
+      
+      console.log(Number(n1), Number(n2), Number(n3), Number(n4));
+      // Перетворити змінні n1, n2, n3, n4 на числа 
+</script>
+-->
 
 <script src="app/app.js"></script>
 </body>
