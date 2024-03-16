@@ -2,12 +2,16 @@
 const guessNumber = 3; 
 let inquiry = prompt ("Guess the number!");
     if (inquiry==guessNumber) 
-    {alert("Congratulations, You did it!");}
+    {alert("Congratulations, You did it!");
+        }
     else if (inquiry>guessNumber) 
-        {alert ("The number is too long");}
+        {alert ("The number is too long");
+            }
     else if (inquiry<guessNumber) 
-        {alert("The number is short");}
-    else {alert ("Wrong inquiry!");}
+        {alert("The number is short");
+            }
+    else {alert ("Wrong inquiry!");
+        }
 
 
 //Task 4.1
@@ -37,11 +41,15 @@ switch (day) {
 
 // Task 5.1
 let score=prompt("What is your score?");
-if (score<50) {alert("Your grade is F");}
-else if (score<70) {alert("Your grade is D");}
-else if( score>>80) {alert("Your grade is C");}
-else if (score>90) {alert("Your grade is B");}
-else{alert("Your grade is A")};
+if (score<50) 
+    {alert("Your grade is F");}
+else if (score<70) 
+    {alert("Your grade is D");}
+else if( score>>80) 
+    {alert("Your grade is C");}
+else if (score>90) 
+    {alert("Your grade is B");}
+else {alert("Your grade is A")};
 
 // Task 5.2
 
