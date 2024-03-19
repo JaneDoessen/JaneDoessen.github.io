@@ -64,11 +64,18 @@ if (n < 1 || !Number.isInteger(n) || x < 1 || !Number.isInteger(x)) {
   }
 
 
-// Task 6
-// function ask(question, yes, no) => {
-//     if (confirm(question)) yes();
-//     else no();
-//   }; 
+//Task 6
+function ask(question, yes, no) {
+    if (confirm(question)) yes();
+    else no();
+  }
+
+  ask(
+    "Do you agree?",
+    () => alert("Youe answer is 'YES'"),
+    () => alert("Your answer is 'NO'")
+  );
+  
 
 // Task 7
 function ask(question, yes, no) {
@@ -82,6 +89,8 @@ function ask(question, yes, no) {
     alert("You answer is 'NO'");
   }
   ask("Do you agree?",itsYes,itsNo);
+
+
 
   //Task 8
   
