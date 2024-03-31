@@ -119,19 +119,6 @@ function validation(logName){
   validation("password1111");
 
 //Task 16
-// function emailCheck(email){
-//     const data = /^[a-zA-Z0-9_-]+@[a-zA-Z]{2,}$/
-//     let matched = email.match(data);
-//     if (data.test(email)){
-//         console.log("Email is valid", matched);
-//         return true;
-//     } else {
-//         console.log("Email is invalid");
-//         return false;
-//     }
-// }
-// emailCheck("email@test.com");
-
 function emailCheck(email) {
     const data = /^[a-zA-Z0-9_-]+@[a-zA-Z0-9]+\.[a-zA-Z]{2,}$/;
   

@@ -55,18 +55,17 @@ console.log(namesThree);
 
 //Task 11
 const namesFour = ['Batman', 'Joker', 'Bane'];
-namesFour[1] = 'Catwoman';
+namesFour.splice(1,0, 'Catwoman');
 console.log(namesFour);
 
 //Task 12
 const namesFive = ['Batman', 'Catwoman', 'Joker', 'Bane'];
-delete namesFive[1];
+namesFive.splice(1,2);
 console.log(namesFive);
 
 //Task 13
 const namesSix = ['Batman', 'Catwoman', 'Joker', 'Bane'];
-namesSix.splice(1,2);
-namesSix[1] = 'Alfred';
+namesSix.splice(1,2,'Alfred');
 console.log(namesSix);
 
 //Task 14
@@ -80,8 +79,20 @@ console.log(namesSeven);
 const namesEight = ['Batman', 'Catwoman', 'Joker', 'Bane'];
 const alfie = namesEight.indexOf('Alfred');
 if (alfie !== -1) {
-    namesEight.splice(alfie);
+    namesEight.splice(alfie,1);
 } else{
     console.log("There is no 'Alfred' in it");
     }
 console.log(namesEight);
+
+// {
+//     const names = ["Batman", "Catwoman", "Joker", "Bane"];
+//     const alf = names.indexOf("Alfred");
+  
+//     if (alf !== -1) {
+//       names.splice(alf, 1);
+//     } else {
+//       console.log("Такого нет");
+//     }
+//     console.log(names);
+//   }
