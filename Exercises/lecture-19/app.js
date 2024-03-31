@@ -119,18 +119,32 @@ function validation(logName){
   validation("password1111");
 
 //Task 16
-function emailCheck(email){
-    const data = /^[a-zA-Z0-9_-]+@[a-zA-Z]{2,}$/
+// function emailCheck(email){
+//     const data = /^[a-zA-Z0-9_-]+@[a-zA-Z]{2,}$/
+//     let matched = email.match(data);
+//     if (data.test(email)){
+//         console.log("Email is valid", matched);
+//         return true;
+//     } else {
+//         console.log("Email is invalid");
+//         return false;
+//     }
+// }
+// emailCheck("email@test.com");
+
+function emailCheck(email) {
+    const data = /^[a-zA-Z0-9_-]+@[a-zA-Z0-9]+\.[a-zA-Z]{2,}$/;
+  
     let matched = email.match(data);
-    if (data.test(email)){
-        console.log("Email is valid", matched);
-        return true;
+    if (data.test(email)) {
+      console.log("Email is valid", matched);
+      return true;
     } else {
-        console.log("Email is invalid");
-        return false;
+      console.log("Email is invalid");
+      return false;
     }
-}
-emailCheck("EmailAddress@test.com");
+  }
+  emailCheck("test@test.com");
 
 //Task 17
 let sentenceAdded = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi in sapien eu velit eleifend ullamcorper eget vitae nulla. Aenean euismod purus sed neque dictum, nec lobortis ante faucibus.';
