@@ -84,15 +84,3 @@ if (alfie !== -1) {
     console.log("There is no 'Alfred' in it");
     }
 console.log(namesEight);
-
-// {
-//     const names = ["Batman", "Catwoman", "Joker", "Bane"];
-//     const alf = names.indexOf("Alfred");
-  
-//     if (alf !== -1) {
-//       names.splice(alf, 1);
-//     } else {
-//       console.log("Такого нет");
-//     }
-//     console.log(names);
-//   }
