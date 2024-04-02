@@ -72,43 +72,19 @@ classSix.addEventListener ('keypress', function (event){
     }
 });
 
-// //Task 7
-// const classSeven = document.querySelectorAll('.card');
+//Task 7
+const classSeven = document.querySelectorAll('.card');
 
-// for (i=0; i<classSeven.length; i++){
-//     const cardTitle = classSeven[i].querySelector ('.card-title');
-//     console.log(cardTitle.textContent);
-// }
-
-// //Task 8
-// for (i=0; i<classSeven.length; i++){
-//     const btn = classSeven[i];
-//     const btnClass = btn.querySelector ('.add-to-cart');
-//     btnClass.addEventListener('click',function(){
-//     console.log(btn.querySelector('.card-title').textContent);
-//     });
-// }
-
-
-// Завдання 7
-const cards = document.querySelectorAll(".card");
-
-for (let i = 0; i < cards.length; i++) {
-  const cardTitle = cards[i].querySelector(".card-title");
-  console.log(cardTitle.textContent);
+for (i=0; i<classSeven.length; i++){
+    const cardTitle = classSeven[i].querySelector ('.card-title');
+    console.log(cardTitle.textContent);
 }
-// а можна ще таким чином
-// const cards = document.querySelectorAll(".card");
-// for (const card of cards) {
-//   console.log(card.querySelector(".card-title").textContent);
-// }
-//
 
-// Завдання 8
-// Селектори знайшов на рядку 95
-for (let i = 0; i < cards.length; i++) {
-  const btnAddToCard = cards[i].querySelector(".add-to-cart");
-  btnAddToCard.addEventListener("click", function () {
-    console.log(cards[i].querySelector(".card-title").textContent);
-  });
+//Task 8
+for (i=0; i<classSeven.length; i++){
+    const btn = classSeven[i];
+    const btnClass = btn.querySelector ('.add-to-cart');
+    btnClass.addEventListener('click',function(){
+    console.log(btn.querySelector('.card-title').textContent);
+    });
 }
