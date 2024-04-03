@@ -3,7 +3,7 @@ const alert = document.querySelector('.alert');
 // Task 1
 const classOne = document.querySelector('.btn-primary');
 
-classOne.onclick = function () {
+classOne.onclick = function() {
     alert.classList.add ('alert-primary');
     alert.textContent = 'A simple primary alert-check it out!';
 }
@@ -19,27 +19,27 @@ classTwo.addEventListener("click", function() {
 //Task 3
 const classThree = document.querySelector('.btn-success');
 
-classThree.addEventListener("mouseover",function () {
+classThree.addEventListener("mouseover",function() {
     alert.classList.add ('alert-success');
     alert.textContent = 'A simple success alert-check it out!';
 });
 
-classThree.addEventListener("mouseout",function () {
+classThree.addEventListener("mouseout",function() {
     alert.classList.remove ('alert-success');
-    alert.textContent = ' ';
+    alert.textContent = '';
 });
 
 //Task 4
 const classFour = document.querySelector('.btn-danger');
 
-classFour.addEventListener("focus",function () {
+classFour.addEventListener("focus",function() {
     alert.classList.add ('alert-danger');
     alert.textContent = 'A simple danger alert-check it out';
 });
 
-classFour.addEventListener("focusout",function () {
+classFour.addEventListener("focusout",function() {
     alert.classList.remove ('alert-danger');
-    alert.textContent = ' ';
+    alert.textContent = '';
 });
 
 //Task 5
@@ -64,7 +64,7 @@ light.addEventListener('click', toggleMode);
 //Task 6
 const classSix = document.querySelector('.btn-info');
 
-classSix.addEventListener ('keypress', function (event){
+classSix.addEventListener ('keypress', function(event){
     if (event.key === 'Enter'){
         event.preventDefault();
         alert.classList.add('alert-info');
@@ -76,7 +76,7 @@ classSix.addEventListener ('keypress', function (event){
 const classSeven = document.querySelectorAll('.card');
 
 for (i=0; i<classSeven.length; i++){
-    const cardTitle = classSeven[i].querySelector ('.card-title');
+    const cardTitle = classSeven[i].querySelector('.card-title');
     console.log(cardTitle.textContent);
 }
 
