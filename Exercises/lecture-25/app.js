@@ -44,7 +44,7 @@ const students = [
 ]
 
 const table = document.createElement('table');
-table.innerHTML = `<tr styke="background-color: blue; color: azure;">
+table.innerHTML = `<tr style="background-color: blue; color: azure;">
                       <th>FirstName</th>
                       <th>lastName</th>
                       <th>degree</th>
