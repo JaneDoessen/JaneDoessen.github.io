@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function(){
         }
 
         const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-        if (emailPattern.test(email)) {
+        if (!emailPattern.test(email)) {
             messageError("Invalid email address");
             return;
         }
