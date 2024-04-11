@@ -27,8 +27,8 @@ document.addEventListener("DOMContentLoaded", function(){
             return;
         }
 
-        form.requestFullscreen();
-       alert("Regustration is successful");
+        form.reset();
+       alert("Registration is successful");
      });
 
      function messageError(message) {
