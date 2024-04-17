@@ -77,7 +77,7 @@ body {
     color: var(--text-color);
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
     color: var(--title-color);
     font-weight: var(--font-medium);
 }
@@ -217,6 +217,11 @@ input {
 
 /* Change background header */
 
+.scroll-header {
+    background-color: var(--body-color);
+    box-shadow: 0 1px 4px var(--shadow);
+}
+
 /* Active link */
 .active-link {
     position: relative;
@@ -253,7 +258,7 @@ input {
     justify-self: center;
 }
 
-.home__idicator {
+.home__indicator {
     width: 8px;
     height: 8px;
     background: var(--title-color);
@@ -262,8 +267,75 @@ input {
     bottom: 15%;
     left: 45%;
 }
-/* Swiper class */
 
+.home__indicator::after{
+    content:'';
+    position: absolute;
+    width: 1px;
+    height: 75px;
+    background: var(--title-color);
+    top: 0;
+    right:45%;
+}
+
+.home__details-img {
+    position: absolute;
+    bottom: 0;
+    right: 58%
+}
+
+.home__details-title,
+.home__details-subtitle {
+    display: block;
+    font-size: var(--small-font-size);
+    text-align: right;
+}
+
+.home__subtitle {
+    font-size: var(--h3-font-size);
+    text-transform: uppercase;
+    margin-bottom: var(--mb-1);
+}
+
+.home__title {
+    font-size: var(--biggest-font-size);
+    font-weight: var(--font-bold);
+    line-height: 109%;
+    margin-bottom: var(--mb-1-5);
+}
+
+.home__description {
+    margin-bottom: var(--mb-2-5);
+    padding-right: 2rem;
+}
+
+.home__buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15%;
+}
+/* Swiper class */
+.swiper-pagination {
+    position: initial;
+    margin-top: var(--mb-2-5);
+}
+
+.swiper-pagination-bullet {
+    width: 5px;
+    height: 5px;
+    background: var(--title-color);
+    opacity: 1;
+}
+
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+    margin: 0 .5rem;
+
+}
+.swiper-pagination-bullet-active {
+    width: 1.5rem;
+    height: 5px;
+    border-radius: .5rem;
+}
 /* ============== BUTTONS ============ */
 .button {
     display: inline-block;
@@ -278,11 +350,197 @@ input {
 .button:hover {
     background: var(--first-color-alt);
 }
+
+.button__icon {
+    font-size: 1.25rem;
+}
+
+.button--link {
+    color: var(--title-color);
+}
+
+.button--flex {
+    display: inline-flex;
+    align-items: center;
+    column-gap: .5rem;
+}
 /* ============ DISCOUNT SECTION ===== */
+.discount__container {
+    grid-template-columns: repeat(2, max-content);
+    justify-content: center;
+    align-items: center;
+    column-gap: 7rem;
+    background-color: var(--container-color);
+    padding: 3rem 0;
+    border-radius: 3rem;
+}
 
-/* ============ NEW ARRIVALS ========= */
+.discount__img {
+    width: 200px;
+}
+.discount__data {
+    padding-left: 6rem;
+    text-align: center;
+}
 
+.discount__title {
+    font-size: var(--h2-font-size);
+    margin-bottom: var(--mb-2);
+}
+
+/* ============ NEW ARRIVALS SECTION ========= */
+.new__container {
+    padding-top: 1rem;
+}
+.new__img {
+    width: 150px;
+    margin-bottom: var(--mb-1);
+    transition: .3s;
+}
+
+.new__content {
+    position: relative;
+    background-color: var(--container-color);
+    width: 310px;
+    padding: 2rem;
+    border-radius: 1rem;
+    text-align: center;
+    overflow: hidden;
+}
+
+.new__tag {
+    position: absolute;
+    top: 8%;
+    left: 8%;
+    background-color: var(--first-color);
+    color: #fff;
+    font-size: var(--small-font-size);
+    padding: .25rem .5rem;
+    border-radius: .25rem;
+}
+
+.new__title {
+    font-size: var(--h3-font-size);
+    font-weight: var(--font-medium);
+}
+
+.new__subtitle {
+    display: block;
+    font-size: var(--small-font-size);
+    margin-bottom: var(--mb-1);
+}
+
+.new__prices {
+    display: inline-flex;
+    align-items: center;
+    column-gap: .5rem;
+}
+
+.new__price {
+    font-weight: var(--font-medium);
+    color: var(--title-color);
+}
+
+.new__discount {
+    color: var(--first-color);
+    font-size: var(--smaller-font-size);
+    text-decoration: line-through;
+    font-weight: var(--font-medium);
+}
+
+.new__button {
+    display: inline-flex;
+    padding: .5rem;
+    border-radius: .25rem .25rem .75rem .25rem;
+    position: absolute;
+    right: -3rem;
+}
+
+.new__icon {
+    font-size: 1.25rem;
+
+}
+
+.new__content:hover .new__img {
+    transform: translateY(-.5rem);
+}
+
+.new__content:hover .new__button {
+    right: 0;
+}
+
+/* ========== STEPS SECTION ===== */
+.steps__bg {
+    background-color: var(--container-color);
+    padding: 3.5rem 2.5rem;
+    border-radius: 1rem;
+}
+
+.steps__container {
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 2rem;
+    padding-top: 1rem;
+}
+
+.steps__card {
+    background-color: var(--body-color);
+    padding: 2.5rem 3rem 2rem 1.5rem;
+    border-radius: 1rem;
+}
+.steps__card-number {
+    display: inline-block;
+    background-color: var(--first-color);
+    color: #fff;
+    padding: .5rem .75rem;
+    border-radius: .25rem;
+    font-size: var(--h2-font-size);
+    margin-bottom: var(--mb-1-5);
+    transition: .3s;
+}
+
+.steps__card-title {
+    font-size: var(--normal-font-size);
+    margin-top: var(--mb-0-5);
+}
+
+.steps__card-description {
+    font-size: small;
+}
+
+.steps__card:hover .steps__card-number {
+    transform: translateY(-.25rem);
+}
 /* ========== NEWSLETTER SECTION ===== */
+.newsletter__container {
+    display: grid;
+    grid-template-columns: .5fr;
+    justify-content: center;
+}
+
+.newsletter__description {
+    padding: 0 3rem;
+    text-align: center;
+    margin-bottom: var(--mb-1-5);
+}
+
+.newsletter__form {
+    background-color: var(--container-color);
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    border-radius: .75rem;
+}
+
+.newsletter__input {
+    width: 70%;
+    padding: 0 .5rem;
+    background: none;
+    color: var(--title-color);
+}
+
+.newletter__input::placeholder {
+    color: var(--text-color);
+}
 
 /* ========== SHOP PAGE =============*/
 
