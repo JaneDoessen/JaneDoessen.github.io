@@ -1,12 +1,23 @@
 // ===============SHOW MENU===================//
-
+const navMenu = document.getElementById('nav-menu');
+const navToggle = document.getElementById('nav-toggle');
+const navClose = document.getElementById('nav-close');
 
 // =============== MENU SHOW ===================//
 // Validate if constant exists
+if (navToggle) {
+    navToggle.addEventListener("click", () => {
+        navMenu.classList.add('show-menu')
+    });
+}
 
 // =============== MENU HIDDEN===================//
 // Validate if constant exists
-
+if (navClose) {
+    navClose.addEventListener("click", () => {
+        navMenu.classList.remove('show-menu')
+    });
+}
 
 // ===============SHOW CART===================//
 const cart = document.getElementById('cart');
@@ -76,7 +87,7 @@ window.addEventListener('scroll', scrollHeader);
 // ===============NEW SWIPER===================//
 var newSwiper = new Swiper(".new-swiper", {
     spaceBetween: 16,
-    centeredSlides: true,
+    centeredSlides: 'true',
     slidesPerView: "auto",
     loop: 'true',
   });
