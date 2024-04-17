@@ -12,6 +12,8 @@
     --body-color: hsl(250, 60%, 98%);
     --container-color: #fff;
     --shadow: hsl (0. 0%, 15%, .1);
+    --scroll-bar-color: hsl(250, 12%, 90%);
+    --scroll-thumb-color: hsl(250, 12%, 80%);
 
     /* ====Font Size==== */
    --body-font: 'Poppins', sans-serif;
@@ -561,13 +563,118 @@ input {
 /* =========== REGISTRATION PAGE =========== */
 
 /* =========== FOOTER =========== */
+.footer {
+    position: relative;
+    overflow: hidden;
+}
+.footer__container {
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    column-gap: 1rem;
+}
 
+.footer__logo {
+    color: var(--text-color);
+    text-transform: lowercase;
+    font-weight: var(--font-bold);
+    letter-spacing: 1px;
+    display: inline-flex;
+    align-items: center;
+    column-gap: .25rem;
+    margin-bottom: var(--mb-1);
+}
+
+.footer__logo-icon {
+    font-size: 1rem;
+}
+
+.footer__description {
+    margin-bottom: var(--mb-0-75);
+}
+
+.footer__social {
+    display: flex;
+    column-gap: .75rem;
+}
+
+.footer__social-link {
+    display: inline-flex;
+    background: var(--container-color);
+    padding: .25rem;
+    border-radius: .25rem;
+    color: var(--title-color);
+    font-size: 1rem;
+}
+
+.footer__social-links:hover {
+    background: var(--first-color);
+    color:#fff;
+}
+
+.footer__title {
+    font-size: var(--h3-font-size);
+    margin-bottom: var(--mb-1);
+}
+
+.footer__links {
+    display: grid;
+    row-gap: .35rem;
+}
+
+.footer__link {
+    font-size: var(--small-font-size);
+    color: var(--text-color);
+    transition: .3s;
+}
+
+.footer__link:hover {
+    color: var(--title-color);
+}
+
+.footer__copy {
+    display: block;
+    text-align: center;
+    font-size: var(--smaller-font-size);
+    margin-top: 6rem;
+}
 /* =========== SCROLL UP =========== */
+.scrollup {
+    position: fixed;
+    right: 1rem;
+    bottom: -30%;
+    background: var(--first-color);
+    border-radius: .4rem;
+    display: inline-flex;
+    padding: .25rem;
+    z-index: var(--z-tooltip);
+    opacity: .8;
+    transition: .4s;
+}
 
+.scrollup:hover {
+    opacity: 1;
+}
+
+.scrolllup__icon {
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.show-scroll {
+    bottom: 3rem;
+}
 /* Show scroll up */
 
 /* =========== SCROLL BAR =========== */
-
+::webkit-scrollbar {
+    width: .60rem;
+    background: var(--scroll-bar-color);
+    border-radius: .5rem;
+}
+::websit-scrollbar-thumb {
+    background: var(--scroll-thumb-color);
+    border-radius: .5rem;
+}
 /* =========== LOGIN =========== */
 .login {
     position: fixed;
