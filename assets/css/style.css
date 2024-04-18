@@ -712,13 +712,117 @@ input {
 /* =========== ABOUT PAGE =========== */
 
 /* =========== BLOG PAGE =========== */
+.blog__container {
+    row-gap: 1.8rem;
+}
 
+.blog__post {
+    grid-template-columns: .8fr 1.2fr;
+    column-gap: 2rem;
+    align-items: center;
+    background-color: var(--container-color);
+    border-radius: 1.2rem;
+    padding: 1.4rem;
+}
+
+.blog__img {
+    border-radius: .8rem;
+}
+
+.blog__details {
+    font-size: var(--small-font-size);
+    text-align: justify;
+    margin-bottom: var(--mb-1);
+}
+
+.vblog__title {
+    font-size: var(--h3-font-size);
+    font-weight: var(--font-medium);
+    margin-bottom: var(--mb-0-5);
+}
+.blog__date {
+    font-size: var(--smaller-font-size);
+    color: var(--text-color);
+    margin-bottom: var(--mb-0-75);
+}
+
+.read__more {
+    text-align: right;
+}
 /* =========== CART PAGE =========== */
 
 /* =========== FAQ's PAGE =========== */
+.questions__container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    padding: 1rem 0 4rem;
+    background-color: #fff;
+    align-items: flex-start;
+}
+
+.question__group {
+    display: grid;
+    row-gap: 2rem;
+}
+
+.questions__item {
+    background-color: var(--container-color);
+    border-radius: .25rem;
+}
+
+.questions__item-title {
+    font-size: var(--small-font-size);
+    font-weight: var(--font-medium);
+}
+
+.questions__icon {
+    font-size: 1.25rem;
+    color: var(--title-color);
+}
+
+.questions__description {
+    font-size: var(--smaller-font-size);
+    padding: 0 3.5rem 2.25rem 2.75rem;
+}
+
+.questions__header {
+    display: flex;
+    align-items: center;
+    column-gap: .5rem;
+    padding: 1rem;
+    cursor: pointer;
+}
+
+.questions__content {
+    overflow: hidden;
+    height: 0;
+}
+
+.questions__item,
+.questions__header,
+.questins__icon,
+.questions__description,
+.questions__container,
+.questions__item-title {
+    transition: .3s;
+}
 
 /* Rotate items, change color of titles and background*/
+.accordion-open .questions__header,
+.accordion-open .questions__content {
+    background-color: var(--first-color);
+}
 
+.accordion-open .questions__item-title,
+.accordion-open .questions__description,
+.accordion-open .questions__content,
+.accordion-open .questions__icon {
+    color: #fff;
+}
+
+.accordion-open .questions__icon {
+    transform: rotate(45deg);
+}
 /* =========== REGISTRATION PAGE =========== */
 
 /* =========== FOOTER =========== */
@@ -1135,6 +1239,27 @@ input {
     .shop__title {
         font-size: var(--normal-font-size);
     }
+
+    .blog__post {
+        column-count: 1.6rem;
+    }
+
+    .blog__title {
+        font-size: var(--normal-font-size);
+    }
+
+    .questions__header {
+        padding: .75rem .5rem;
+    }
+
+    .questions__description {
+        padding: 0 1.25rem 1.25rem 2rem;
+    }
+
+    .questions_group {
+        row-gap: 1.5rem;
+    }
+
 }
 
 
@@ -1227,6 +1352,14 @@ input {
     .pagination {
         justify-content: center;
     }
+    
+    .blog__post {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .questions__container {
+       grid-template-columns: 1fr;     
+    }
 
     .footer__container {
         grid-template-columns: 1fr;
@@ -1278,6 +1411,11 @@ input {
     .pagination {
         column-gap: .4rem;
     }
+.blog__post {
+    grid-template-columns: 1fr;
+    row-gap: .8rem;
+}
+
 }
 
 
@@ -1316,6 +1454,10 @@ input {
 
     .pagination span {
         font-size: var(--small-font-size);
+    }
+
+    .blog__post{
+        padding: .8rem;
     }
 }
 
