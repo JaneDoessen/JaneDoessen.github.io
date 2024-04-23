@@ -46,6 +46,8 @@ function App() {
 
       {Header}
 
+      <JscFragment/>
+
       {/* <h3 style={{backgroundColor:'blue', color:'gold'}}>It's today: {today.toLocaleDateString()} </h3> */}
 
       <p className="read-the-docs">
