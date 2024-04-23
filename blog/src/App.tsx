@@ -2,7 +2,7 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-import './elements/JxsFragment'
+import JsxFragment from './elements/JxsFragment'
 
 const jsxEl = <h1>I am a JSX element</h1>
 
@@ -46,7 +46,7 @@ function App() {
 
       {Header}
 
-      <JscFragment/>
+      <JsxFragment/>
 
       {/* <h3 style={{backgroundColor:'blue', color:'gold'}}>It's today: {today.toLocaleDateString()} </h3> */}
 
