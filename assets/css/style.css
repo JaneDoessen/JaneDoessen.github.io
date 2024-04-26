@@ -1302,7 +1302,7 @@ input {
     background-color: var(--first-color-alt);
 }
 
-.cart .cart__checkhout a{
+.cart__checkhout a{
     color: #fff;
     text-align: center;
     font-size: var(--small-font-size);

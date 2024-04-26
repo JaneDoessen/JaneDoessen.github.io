@@ -53,7 +53,11 @@ fetch('product.json')
 // show data in list html
 function addDataToHTML() {
     //remove default data in html
-    let listProductHTML = document.querySelector('.listProduct')
+    let listProductHTML = document.querySelector('.shop__items');
+    listProductHTML.innerHTML = '';
+
+    //add new data
+    
 }
 
 
