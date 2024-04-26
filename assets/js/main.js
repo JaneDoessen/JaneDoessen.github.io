@@ -57,9 +57,102 @@ function addDataToHTML() {
     listProductHTML.innerHTML = '';
 
     //add new data
-    if(products )
+    if(products != null){
+        products.forEach(product => {
+            let newProduct = document.createElement('div');
+            newProduct.classList.add('item');
+            newProduct.innerHTML = 
+            `<div class="shop__content">
+            <div class="shop__tag">Sale</div>
+            <img src="${product.image}" alt="" class="shop__img">
+            <h3 class="shop__title">${product.title}</h3>
+            <span class="shop__subtitle">${product.subtitle} </span>
+
+            <div class="shop__prices">
+                <span class="shop__price">$${product.price}</span>
+                <span class="shop__discount">$${product.discount}</span>
+            </div>
+            <a class="button shop__button" onclick="addCart(${product.id})">
+                <i class="bx bx-cart-alt shop__icon"></i>
+            </a>;
+            </div>`
+            listProductHTML.appendChild(newProduct);
+        });
+    }
 }
 
+let listCart = [];
+// let's get cookie data cart
+function checkCart() {
+    var cookieValue = document.cookie
+    .split('; ')
+    .find(row => row.startsWith('listCart='));
+    if(cookieValue) {
+        listCart = JSON.parse(cookieValue.split('=')[1]);
+    }
+}
+checkCart();
+
+function addCart($idProduct) {
+    let productCopy = JSON.parse(JSON.stringify(products));
+    //if this product is not in the cart yet
+    if(!listCart[$idProduct]) {
+        let dataProduct = productCopy.filter(
+            product => product.id == $idProduct
+        )[0];
+        //add product to cart
+        listCart[$idProduct] = dataProduct;
+        listCart[$idProduct].quantity = 1;
+    }else{
+        //if this product is already in the cart, the quantity is being increased
+        listCart[$idProduct].quantity++;
+    }
+    //saving data in cookie
+    let timeSave = "expires=Thu, 31 Dec 2024 23:59:59 UTC";
+    document.cookie = "listCart="+JSON.stringify(listCart)+"; "+timeSave+"; path=/;";
+    addCartToHTML();
+}
+addCartToHTML();
+
+function addCartToHTML() {
+    // clear default data 
+    let listCartHTML = document.querySelector('.cart__box');
+    listCartHTML.innerHTML = '';
+
+    // let totalHTML = document.querySelector('.totalQuantity');
+    // let totalQuantity = 0;
+
+    if(listCart) {
+        listCart.forEach(product => {
+            if(product) {
+                let newCart = document.createElement('div');
+                newCart.classList.add('item');
+                newCart.innerHTML = 
+                `<article class="cart__card"> 
+                <div class="cart__box">
+                    <img src="${product.image}" alt="" class="cart__img">
+    
+                <div class="cart__details">
+                    <h3 class="cart__title">${product.title}</h3>
+                    <span class="cart__price">$${product.price}</span>
+    
+                    <div class="cart__amount">
+                        <div class="cart__amount-content">
+                            <span class="cart__amount-box"><i class="bx bx-minus"></i></span>
+                            <span class="cart__amount-number">${product.quantity}</span>
+                            <span class="cart__amount-box"><i class="bx bx-plus"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </article>`;
+                listCartHTML.appendChild(newCart);
+                // totalQuantity = totalQuantity + product.quantity;
+            }
+        })
+    }
+// totalHTML.innerText = totalQuantity;
+}
 
 // ===============SHOW LOGIN===================//
 const login = document.getElementById('login');
