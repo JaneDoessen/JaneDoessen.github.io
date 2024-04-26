@@ -1,0 +1,48 @@
+[
+{
+    "id": 1,
+    "shopping__tag": "New",
+    "name": "Slim Fit Jacket",
+    "price": 91.20,
+    "image": "assets/img/product_1.jpeg"
+},
+{
+    "id": 2,
+    "name": "Loose Fir Twill Overshirt",
+    "shopping__tag": "Sale",
+    "price": 43.99,
+    "discount": 74.99,
+    "image": "assets/img/product_2.jpeg"
+},
+{
+    "id": 3,
+    "shopping__tag": "Sale",
+    "name": "Satin Baseball Jackets",
+    "price": 66.40,
+    "discount": 82.99,
+    "image": "assets/img/product_3.jpeg"
+},
+{
+    "id": 4,
+    "shopping__tag": "New",
+    "name": "Knit Dress",
+    "price": 49.99,
+    "image": "assets/img/product_4.jpeg"
+},
+{
+    "id": 5,
+    "shopping__tag": "Sale",
+    "name": "Baloon-sleeved Blouse",
+    "price": 20.00,
+    "discount": 24.99,
+    "image": "assets/img/product_5.jpeg"
+},
+{
+    "id": 6,
+    "shopping__tag": "Sale",
+    "name": "Pleated Chiffon Skirt",
+    "price": 44.00,
+    "discount": 54.99,
+    "image": "assets/img/product_6.jpeg"
+}
+]
