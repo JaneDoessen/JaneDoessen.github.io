@@ -40,6 +40,23 @@ if (cartClose) {
     });
 }
 
+// =============== CART ======================= //
+let products = null;
+// get data from json
+fetch('product.json')
+.then(response => response.json())
+.then(data => {
+    products = data;
+    addDataToHTML();
+})
+
+// show data in list html
+function addDataToHTML() {
+    //remove default data in html
+    let listProductHTML = document.querySelector('.listProduct')
+}
+
+
 // ===============SHOW LOGIN===================//
 const login = document.getElementById('login');
 const loginButton = document.getElementById('login-button');
