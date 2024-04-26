@@ -1259,7 +1259,7 @@ input {
 .cart__price {
     display: block;
     font-size: var(--small-font-size);
-    color: var(--first-color);
+    color: var(--title-color);
     margin-bottom: var(--mb-1-5);
 }
 
@@ -1292,7 +1292,7 @@ input {
 
 .cart__checkhout {
     margin-top: 3rem;
-    align-self: center;
+    align-items: center;
     padding: .5rem;
     background-color: var(--first-color);
     border-radius: 25rem;
@@ -1302,10 +1302,10 @@ input {
     background-color: var(--first-color-alt);
 }
 
-.cart__checkhout a{
+.cart .cart__checkhout a{
     color: #fff;
-    align-items: center;
-    font-size: var(--h3-font-size);
+    text-align: center;
+    font-size: var(--small-font-size);
     font-weight: var(--font-medium);
     cursor: pointer;
 }
