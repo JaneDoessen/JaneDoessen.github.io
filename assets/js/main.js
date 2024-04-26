@@ -57,7 +57,7 @@ function addDataToHTML() {
     listProductHTML.innerHTML = '';
 
     //add new data
-    
+    if(products )
 }
 
 
