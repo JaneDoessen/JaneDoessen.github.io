@@ -260,6 +260,3 @@ const toggleItem = (item) => {
     item.classList.add('accordion-open');
     }
 }
-
-// =============== CHECKOUT ===================//
-
