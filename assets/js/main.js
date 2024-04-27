@@ -119,8 +119,8 @@ function addCartToHTML() {
     let listCartHTML = document.querySelector('.list__cart');
     listCartHTML.innerHTML = '';
 
-    // let totalHTML = document.querySelector('.totalQuantity');
-    // let totalQuantity = 0;
+    let totalHTML = document.querySelector('.total__mark');
+    let totalQuantity = 0;
 
     if(listCart) {
         listCart.forEach(product => {
@@ -139,11 +139,11 @@ function addCartToHTML() {
                         <button onclick="changeQuantity(${product.id}, '+')">+</button>
                     </div>`;
                 listCartHTML.appendChild(newCart);
-                // totalQuantity = totalQuantity + product.quantity;
+                totalQuantity = totalQuantity + product.quantity;
             }
         })
     }
-// totalHTML.innerText = totalQuantity;
+totalHTML.innerText = totalQuantity;
 }
 
 function changeQuantity($idProduct, $type) {

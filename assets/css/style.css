@@ -191,6 +191,7 @@ input {
     align-items: center;
     column-gap: 1rem;
     margin-left: auto;
+    justify-content: space-between;
 }
 
 .nav__toggle,
@@ -198,6 +199,23 @@ input {
 .nav__shop {
     font-size: 1.25rem;
     cursor: pointer;
+}
+
+.total__mark {
+    position: absolute;
+    top: 23px;
+    margin-right: auto;
+    font-size: var(--smaller-font-size);
+    background-color: var(--first-color);
+    color: #fff;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    font-weight: var(--font-medium);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(20px);
 }
 
 .nav__list {
