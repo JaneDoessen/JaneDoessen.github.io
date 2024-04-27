@@ -74,7 +74,7 @@ function addDataToHTML() {
             </div>
             <a class="button shop__button" onclick="addCart(${product.id})">
                 <i class="bx bx-cart-alt shop__icon"></i>
-            </a>;
+            </a>
             </div>`
             listProductHTML.appendChild(newProduct);
         });

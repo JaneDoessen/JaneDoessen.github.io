@@ -107,8 +107,6 @@ input {
     outline: none;
 }
 
-/* ========= THEME======== */
-/* ====Variables Dark Theme==== */
 
 /* ========= REUSABLE CSS CLASSES=========== */
 .section {
@@ -270,7 +268,6 @@ input {
     border-radius: 50%;
 }
 
-/* =============== MAIN ============= */
 /* =============HOME SECTION ======== */
 .home__content {
     padding: 9rem 0 2rem;
@@ -906,7 +903,6 @@ input {
 .read__more {
     text-align: right;
 }
-/* =========== CART PAGE =========== */
 
 /* =========== FAQ's PAGE =========== */
 .questions__container {
@@ -980,7 +976,6 @@ input {
 .accordion-open .questions__icon {
     transform: rotate(45deg);
 }
-/* =========== REGISTRATION PAGE =========== */
 
 /* =========== CONTACT  =========== */
 .contact__container {
@@ -1295,11 +1290,13 @@ input {
 
 .cart .cart__checkhout {
     margin-top: 2rem;
+    width: auto;
     display: flex;
     align-items: center;
     padding: .5rem;
     background-color: var(--first-color);
     border-radius: 25rem;
+    cursor: pointer;
 }
 
 .cart__checkhout:hover{
@@ -1323,12 +1320,6 @@ input {
 /* Lightbox open */
 
 /* Lightbox open animation */
-
-/* =========== STYLE SWITCHER =========== */
-
-/* Style switcher open */
-
-/* Active theme color */
 
 
 /* =========== CHECKOUT ================= */
