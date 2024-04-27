@@ -116,7 +116,7 @@ addCartToHTML();
 
 function addCartToHTML() {
     // clear default data 
-    let listCartHTML = document.querySelector('.cart__box');
+    let listCartHTML = document.querySelector('.list__cart');
     listCartHTML.innerHTML = '';
 
     // let totalHTML = document.querySelector('.totalQuantity');
@@ -128,30 +128,45 @@ function addCartToHTML() {
                 let newCart = document.createElement('div');
                 newCart.classList.add('item');
                 newCart.innerHTML = 
-                `<article class="cart__card"> 
-                <div class="cart__box">
-                    <img src="${product.image}" alt="" class="cart__img">
-    
-                <div class="cart__details">
-                    <h3 class="cart__title">${product.title}</h3>
-                    <span class="cart__price">$${product.price}</span>
-    
-                    <div class="cart__amount">
-                        <div class="cart__amount-content">
-                            <span class="cart__amount-box"><i class="bx bx-minus"></i></span>
-                            <span class="cart__amount-number">${product.quantity}</span>
-                            <span class="cart__amount-box"><i class="bx bx-plus"></i>
-                            </span>
-                        </div>
+                `<img src="${product.image}">
+                    <div class="content">
+                        <div class="name">${product.title}</div>
+                        <div class="price">$${product.price}</div>
                     </div>
-                </div>
-            </article>`;
+                    <div class="quantity">
+                        <button onclick="changeQuantity(${product.id}, '-')">-</button>
+                        <span class="value">${product.quantity}</span>
+                        <button onclick="changeQuantity(${product.id}, '+')">+</button>
+                    </div>`;
                 listCartHTML.appendChild(newCart);
                 // totalQuantity = totalQuantity + product.quantity;
             }
         })
     }
 // totalHTML.innerText = totalQuantity;
+}
+
+function changeQuantity($idProduct, $type) {
+    switch ($type) {
+        case '+':
+            listCart[$idProduct].quantity++;
+            break;
+        case '-':
+            listCart[$idProduct].quantity--;
+            if(listCart[$idProduct] = 0) {
+                delete listCart[$idProduct];
+            }
+            break;
+        default:
+            break;
+    }
+    //save new data in cookie
+    let timeSave = "expires=Thu, 31 Dec 2024 23:59:59 UTC";
+    document.cookie = "listCart="+JSON.stringify(listCart)+"; "+timeSave+"; path=/;";
+
+    //reload list cart in HTML
+    addCartToHTML();
+
 }
 
 // ===============SHOW LOGIN===================//

@@ -39,6 +39,10 @@
                     </li>
 
                     <li class="nav__item">
+                        <a href="cart.html" class="nav__link">Cart</a>
+                    </li>
+
+                    <li class="nav__item">
                         <a href="blog.html" class="nav__link">Blog</a>
                     </li>
 
@@ -77,89 +81,23 @@
 
     <h2 class="cart__title-center">My Cart</h2>
 
-    <div class="cart__container">
-        <article class="cart__card"> 
-            <div class="cart__box">
-                <img src="assets/img/product_1.jpeg" alt="" class="cart__img">
-
-            <div class="cart__details">
-                <h3 class="cart__title">Slim Fit Jacket</h3>
-                <span class="cart__price">$85.99</span>
-
-                <div class="cart__amount">
-                    <div class="cart__amount-content">
-                        <span class="cart__amount-box"><i class="bx bx-minus"></i></span>
-                        <span class="cart__amount-number">1</span>
-                        <span class="cart__amount-box"><i class="bx bx-plus"></i>
-                        </span>
-                    </div>
-                </div>
+    <div class="list__cart">
+        <div class="item">
+            <img src="assets/img/product_1.jpeg">
+            <div class="content">
+                <div class="name">Slim Fit Jacket</div>
+                <div class="price">$85.99</div>
             </div>
-        </article>
-
-        <!-- <article class="cart__card">
-            <div class="cart__box">
-                <img src="assets/img/cart_2.jpeg" alt="" class="cart__img">
+            <div class="quantity">
+                <button>-</button>
+                <span class="value">3</span>
+                <button>+</button>
             </div>
-
-            <div class="cart__details">
-                <h3 class="cart__title">Denim Skirt</h3>
-                <span class="cart__price">$44.99</span>
-
-                <div class="cart__amount">
-                    <div class="cart__amount-content">
-                        <span class="cart__amount-box">
-                            <i class="bx bx-minus"></i>
-                        </span>
-
-                        <span class="cart__amount-number">1</span>
-
-                        <span class="cart__amount-box">
-                            <i class="bx bx-plus"></i>
-                        </span>
-                    </div>
-
-                    <i class="bx bx-trash-alt cart__amount-trash"></i>
-                </div>
-            </div>
-        </article> -->
-
-        <!-- <article class="cart__card">
-            <div class="cart__box">
-                <img src="assets/img/cart_3.jpeg" alt="" class="cart__img">
-            </div>
-
-            <div class="cart__details">
-                <h3 class="cart__title">Regular Fit Baseball Jacket</h3>
-                <span class="cart__price">$54.99</span>
-
-                <div class="cart__amount">
-                    <div class="cart__amount-content">
-                        <span class="cart__amount-box">
-                            <i class="bx bx-minus"></i>
-                        </span>
-
-                        <span class="cart__amount-number">1</span>
-
-                        <span class="cart__amount-box">
-                            <i class="bx bx-plus"></i>
-                        </span>
-                    </div>
-
-                    <i class="bx bx-trash-alt cart__amount-trash"></i>
-                </div>
-            </div>
-        </article> -->
+        </div>
     </div>
-
-    <!-- <div class="cart__prices">
-        <span class="cart__prices-item">3 items</span>
-        <span class="cart__prices-total">$152.97</span>
-    </div> -->
-
     <div class="cart__checkhout">
         <a href="cart.html">CHECKOUT</a>
-    </div>
+    </div>  
 </div>
 
 <!-- ===========LOGIN ===============-->
@@ -316,85 +254,6 @@
                         <i class="bx bx-cart-alt shop__icon"></i>
                     </a>
                 </div>
-
-                <!-- <div class="shop__content">
-                    <div class="shop__tag">Sale</div>
-                    <img src="assets/img/product_2.jpeg" alt="" class="shop__img">
-                    <h3 class="shop__title">Loose Fit Twill Overshirt</h3>
-                    <span class="shop__subtitle">Cotton</span>
-
-                    <div class="shop__prices">
-                        <span class="shop__price">$43.99</span>
-                        <span class="shop__discount">$74.99</span>
-                    </div>
-
-                    <a class="button shop__button">
-                        <i class="bx bx-cart-alt shop__icon"></i>
-                    </a>
-                </div>
-
-                <div class="shop__content">
-                    <div class="shop__tag">Sale</div>
-                    <img src="assets/img/product_3.jpeg" alt="" class="shop__img">
-                    <h3 class="shop__title">Satin Baseball Jacket</h3>
-                    <span class="shop__subtitle">Polyester</span>
-
-                    <div class="shop__prices">
-                        <span class="shop__price">$66.40</span>
-                        <span class="shop__discount">$82.99</span>
-                    </div>
-
-                    <a class="button shop__button">
-                        <i class="bx bx-cart-alt shop__icon"></i>
-                    </a>
-                </div>
-
-                <div class="shop__content">
-                    <div class="shop__tag">New</div>
-                    <img src="assets/img/product_4.jpeg" alt="" class="shop__img">
-                    <h3 class="shop__title">Knit Dress</h3>
-                    <span class="shop__subtitle">Cotton, Acrylic</span>
-
-                    <div class="shop__prices">
-                        <span class="shop__price">$49.99</span>
-                    </div>
-
-                    <a class="button shop__button">
-                        <i class="bx bx-cart-alt shop__icon"></i>
-                    </a>
-                </div>
-
-                <div class="shop__content">
-                    <div class="shop__tag">Sale</div>
-                    <img src="assets/img/product_5.jpeg" alt="" class="shop__img">
-                    <h3 class="shop__title">Balloon-Sleeved Blouse</h3>
-                    <span class="shop__subtitle">Viscose</span>
-
-                    <div class="shop__prices">
-                        <span class="shop__price">$20.00</span>
-                        <span class="shop__discount">$24.99</span>
-                    </div>
-
-                    <a class="button shop__button">
-                        <i class="bx bx-cart-alt shop__icon"></i>
-                    </a>
-                </div>
-
-                <div class="shop__content">
-                    <div class="shop__tag">Sale</div>
-                    <img src="assets/img/product_6.jpeg" alt="" class="shop__img">
-                    <h3 class="shop__title">Pleated Chiffon Skirt</h3>
-                    <span class="shop__subtitle">Chiffon</span>
-
-                    <div class="shop__prices">
-                        <span class="shop__price">$44.00</span>
-                        <span class="shop__discount">$54.99</span>
-                    </div>
-
-                    <a class="button shop__button">
-                        <i class="bx bx-cart-alt shop__icon"></i>
-                    </a>
-                </div> -->
             </div>
         </div>
 
